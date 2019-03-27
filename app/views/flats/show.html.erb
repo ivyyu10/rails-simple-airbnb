@@ -1,0 +1,8 @@
+<div class="card-big">
+  <p><%= image_tag @flat.picture, class:"image" %></p>
+  <h3><%= @flat.name %></h3>
+  <p><%= @flat.address %></p>
+  <p><%= @flat.description %></p>
+  <p>$<%= @flat.price_per_night %> - <%= @flat.number_of_guests %> Guests</p>
+</div>
+<%= link_to "Back to flats", flats_path, class:"link" %>

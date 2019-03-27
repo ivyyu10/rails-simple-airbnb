@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 #front end gems
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'simple_form'
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass', '~> 5.6.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -1,16 +1,62 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
 @import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.container {
+display: grid;
+justify-content: space-around;
+flex-direction: column;
+width: 100%;
+margin-top: 40px;
+margin-bottom: 50px;
+}
+
+.container h1 {
+  color: #EA5A59;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+  height: 500px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+
+}
+
+.image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-big {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 480px;
+  border: 1px solid lightgrey;
+  padding: 30px;
+}
+
+.link {
+  margin-left: 50px;
+  margin-top: 20px
+}
+
+.btn-warning {
+  margin: 20px;
+  text-align: center;
+}
