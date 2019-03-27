@@ -10,9 +10,14 @@
         <p><%= flat.address %></p>
         <p><%= flat.description %></p>
         <p><i class="fas fa-euro-sign"></i> <%= flat.price_per_night %> - <i class="fas fa-user-friends"></i> <%= flat.number_of_guests %></p>
-        <%= link_to "See More", flat_path(flat) %>
+        <div class="options">
+          <%= link_to "See More", flat_path(flat) %>
+          <%= link_to "Edit this Flat", edit_flat_path(flat) %>
+        </i><%= link_to flat_path(flat), method: :delete, data: { confirm: "Are you sure you want to delete this flat?" } do %><i class="fas fa-trash-alt"></i>
+        <% end %>
       </div>
     </div>
-  <% end %>
+  </div>
+<% end %>
 </div>
 <%= link_to "Add a new flat", new_flat_path(@flat), class:"btn btn-warning" %>
